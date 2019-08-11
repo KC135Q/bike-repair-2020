@@ -4,6 +4,7 @@ const routes = require("./controllers/bike-controller.js");
 const app = express();
 var mysql = require("mysql");
 const PORT = process.env.PORT || 3001;
+const path = require("path");
 
 // Configure body parsing for AJAX requests
 app.use(express.urlencoded({ extended: true }));
