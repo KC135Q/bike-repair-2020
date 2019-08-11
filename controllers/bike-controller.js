@@ -32,7 +32,7 @@ router.get("/api/clients/:name", function(req, res) {
 });
 
 router.use(function(req, res) {
-  res.sendFile(path.join(__dirname, "../clients/build/index.html"));
+  res.sendFile(path.join(__dirname, "/clients/build/index.html"));
 });
 
 module.exports = router;
