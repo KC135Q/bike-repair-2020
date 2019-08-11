@@ -1,6 +1,6 @@
 const express = require("express");
 const db = require("./models");
-const routes = require("../Bike-Repair/controllers/bike-controller.js");
+const routes = require("./controllers/bike-controller.js");
 const app = express();
 var mysql = require("mysql");
 const PORT = process.env.PORT || 3001;
