@@ -3,7 +3,7 @@ var router = express.Router();
 var db = require("../models");
 var Sequelize = require("sequelize");
 var Op = Sequelize.Op;
-var path = require("path");
+// var path = require("path");
 
 // get route, edited to match sequelize
 router.get("/api/clients", function(req, res) {
@@ -31,8 +31,8 @@ router.get("/api/clients/:name", function(req, res) {
   });
 });
 
-router.use(function(req, res) {
-  res.sendFile(path.join(__dirname, "/clients/build/index.html"));
-});
+// router.use(function(req, res) {
+//   res.sendFile(path.join(__dirname, "/clients/build/index.html"));
+// });
 
 module.exports = router;
